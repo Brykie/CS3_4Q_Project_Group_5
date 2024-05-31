@@ -1,0 +1,569 @@
+/* General Code */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-image: url(media/pattern_waves-2_1_4_0-0_130_2__dddddd_eeeeee_bbbbbb_29a9ab_cccccc.png);
+}
+/* Navbar */
+nav {
+    z-index: 99;
+    height: 15vh;
+    width: 97vw;
+    display: flex;
+    position: fixed;
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    border-radius: 3vh;
+    background-color: white;
+    box-shadow: 10px 10px 20px darkgrey;
+    overflow-y: hidden;
+}
+
+.htext {
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    height: 18vh;
+    margin-top: 3vh;
+}
+
+.htext a {
+    font-size: 1.35em;
+    font-weight: 700;
+    font-family: 'Young Serif', sans-serif;
+    padding: 2vh;
+    text-decoration: none;
+    transition: 0.5s;
+    color: black;
+    overflow-y: hidden;
+}
+.htext a:hover{
+    color: white;
+    background-color: rgb(161, 125, 215);
+    font-size: 2em;
+}
+.hlogo {
+    display: flex;
+    justify-content: end;
+    margin-top: 1vw;
+    margin-left: 2vh;
+    width: 58vw;
+    height: 13vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Section/Page1 Code */
+video {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.page1 {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.page1 h1 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: bolder;
+    margin-top: 25vh;
+    margin-left: 10vw;
+    margin-right: 35vw;
+    padding: 2vh;
+    color: white;
+    font-size: 2em;
+    background-color: rgb(161, 125, 215);
+    border-radius: 3vh;
+    transition: 0.5s;
+    opacity: 0.85;
+}
+
+.page1 h3 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: bolder;
+    margin-top: 3vh;
+    margin-left: 10vw;
+    margin-right: 35vw;
+    padding: 2vh;
+    color: white;
+    background-color: rgb(161, 125, 215);
+    transition: 0.5s;
+    border-radius: 3vh;
+    opacity: 0.85;
+}
+/* Section/Page2 Code */
+.page2 {
+    z-index: -1;
+    height: 95vh;
+    width: 100vw;
+    margin-top: 14vh;
+    background: rgb(255,255,255);
+    
+}
+
+.page2title {
+    z-index: 90;
+    height: 15vh;
+    width: 97vw;
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    border-radius: 3vh;
+    background: rgb(255,255,255);
+    box-shadow: 10px 10px 20px darkgrey;
+}
+
+.page2title h1 {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Young Serif', sans-serif;
+    margin: auto;
+    padding: 4vh;
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+}
+
+
+.page2box {
+    text-align: center;
+    z-index: 90;
+    height: 70vh;
+    width: 97vw;
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-radius: 3vh;
+    background: rgb(255,255,255);
+}
+   
+
+.page2boxtext {
+    
+    width: 60vw;
+    font-size: 1em;
+    font-family: 'Young Serif', sans-serif;
+    margin: auto;
+    margin-right: 10vh;
+    padding: 4vh;
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+}
+
+.page2img {
+    margin-top: 5vh;
+    margin-right: 5vh;
+    
+    height: 60vh;
+    width: 32vw;
+    background-size: cover;
+    float: right;
+}
+
+.page2img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+/* Section/Page3 Code */
+.page3 { /* same code as page2 but eh */
+    z-index: -1;
+    height: 95vh;
+    width: 100vw;
+    margin-top: 14vh;
+    background: rgb(255,255,255);
+}
+
+.page3title {
+    z-index: 90;
+    height: 15vh;
+    width: 97vw;
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    border-radius: 3vh;
+    background: rgb(255,255,255);
+    box-shadow: 10px 10px 20px darkgrey;
+}
+
+.page3title h1 {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Young Serif', sans-serif;
+    margin: auto;
+    padding: 4vh;
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+}
+
+.page3container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.achievement-box {
+    z-index: 0.9;
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 1.5vw;
+    border-radius: 1vh;
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px darkgrey;
+    font-family: 'Young Serif', sans-serif;
+}
+
+.achievement-box img {
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 3vh
+}
+  
+  
+.achievement-box p {
+    padding: 10px;
+    text-align: center;
+}
+  
+/* Footer */
+footer {
+    height: 40vh;
+    width: 100vw;
+    background-color: darkgrey;
+  
+    bottom: 0;
+}
+
+.fleft {
+    width: 50vw;
+    display: inline-block;
+}
+.flogo {
+    display: flex;
+    margin-top: 1vw;
+    margin-left: 2vh;
+    width: 48vw;
+    height: 12.5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ftext{
+    display: inline-block;
+    font-size: 1.2em;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    font-weight: 600;
+    font-family: 'Young Serif', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+
+.website {
+    margin-top: 3vh;
+    display: inline-block;
+}
+
+.website a {
+
+    background-color: white;
+    text-decoration: none;
+    margin-left: 1vw;
+    font-weight: 600;
+    font-family: 'Young Serif', sans-serif;
+    transition: 0.5s;
+}
+
+.website a:hover {
+    font-size: 1.5em;
+    color: white;
+    background-color:rgb(161, 125, 215)
+}
+
+.spritelinks {
+    margin-top: 2vh;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    float: right;
+}
+
+#fb { /* thanks spritecow even though it looks trash*/
+    background: url('media/spritesheet.png') no-repeat -439px -146px;
+	width: 66px;
+	height: 66px;
+}
+
+#tw {
+    background: url('media/spritesheet.png') no-repeat -66px -72px;
+    width: 66px;
+    height: 66px;
+}
+
+#yt {
+    background: url('media/spritesheet.png') no-repeat -439px -221px;
+	width: 66px;
+	height: 66px;
+}
+
+/* Section/Page4 Code*/
+.page4 { 
+    z-index: 0;
+    height: 95vh;
+    width: 100vw;
+    margin-top: 14vh;
+    background: rgb(255,255,255);
+    text-align: center;
+    font-family: 'Young Serif', sans-serif;
+    background-color: rgba(101, 126, 235, 0.668);
+}
+
+.page4title {
+    z-index: 90;
+    height: 15vh;
+    width: 97vw;
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    border-radius: 3vh;
+    background: rgb(255,255,255);
+    box-shadow: 10px 10px 20px darkgrey;
+}
+
+.page4title h1 {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Young Serif', sans-serif;
+    margin: auto;
+    padding: 4vh;
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+}
+
+.page4 span {
+    font-size: x-large;
+    font-weight: bold;
+    color: #000000;
+}
+
+.page4 main {
+    background-image: url(media/pattern_waves-2_1_4_0-0_130_2__dddddd_eeeeee_bbbbbb_29a9ab_cccccc.png);
+    z-index: 99;
+    height: 40vh;
+}
+/* Section/Page5 Code*/
+.page5 {
+    z-index: -1;
+    height: 95vh;
+    width: 100vw;
+    margin-top: 14vh;
+    background: rgb(255,255,255);
+}
+
+.page5title {
+    z-index: 90;
+    height: 15vh;
+    width: 97vw;
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    border-radius: 3vh;
+    background: rgb(255,255,255);
+    box-shadow: 10px 10px 20px darkgrey;
+}
+
+.page5title h1 {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Young Serif', sans-serif;
+    margin: auto;
+    padding: 4vh;
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+}
+
+.page5box {
+    text-align: center;
+    z-index: 90;
+    height: 70vh;
+    width: 97vw;
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-radius: 3vh;
+   
+}
+       
+.page5boxtext {
+    left: 50vw;
+    right: 50vw;
+    font-size: 1.5em;
+    font-family: 'Young Serif', sans-serif;
+    margin: auto;
+    margin-right: 10vh;
+    padding: 4vh;
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+}
+
+/* Form Styles */
+#form {
+    margin: auto;
+    margin-top: 5vh;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 30%;
+}
+
+.input-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.input-wrapper input[type="text"],
+.input-wrapper input[type="email"],
+.input-wrapper input[type="password"],
+.input-wrapper input[type="tel"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-wrapper input[type="radio"] {
+    margin-right: 5px;
+}
+
+.input-wrapper textarea {
+    resize: vertical;
+    height: 50px;
+     width: 100%; 
+    
+    
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+input[type="submit"] {
+    align-self: flex-end;
+    background-color: rgb(161, 125, 215);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+/* Profile Page Styles */
+.profile {
+    max-width: 800px;
+    margin: 20vh auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px darkgrey;
+    font-family: 'Young Serif', sans-serif;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header img {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    margin-right: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.profile-details p {
+    font-size: 1.2em;
+    margin: 1rem 0;
+}
+
+.profile-details p strong {
+    font-weight: bold;
+}
+    
+
+
+
+
+
+
+

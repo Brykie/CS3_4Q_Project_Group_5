@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="profilestats()">
+    <header>
+
+        <nav>
+
+            <div class="hlogo">
+
+                <img src="media/grey-logo.png" alt="Logo">        
+
+            </div>
+
+            <div class="htext">
+
+                <a href="index.html">Home</a>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <section class="profile">
+        <div class="profile-header">
+
+            <img id="profile-image" src="media/image.png" alt="Profile Image">
+            <h1 id="profile-name"></h1>
+
+        </div>
+
+        <div class="profile-details">
+            <p><strong>Email:</strong> <span id="profile-email"></span></p>
+            <p><strong>Gender:</strong> <span id="profile-gender"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="profile-mobile"></span></p>
+            <p><strong>Reason for Support:</strong> <span id="profile-reason"></span></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="fleft">
+
+            <div class="flogo">
+
+                <img src="media/grey-logo.png" alt="">
+
+            </div>
+
+            <div class="ftext">
+
+                no copyright because this is not official website go to actual one cool thanks
+
+            </div>
+             <div class="website"><a href="https://www.alleycat.org/resources/why-trap-neuter-return-feral-cats-the-case-for-tnr/">Alley Cat Allies</a></div>
+        </div>
+
+        <div class="spritelinks">
+            <a href="https://www.facebook.com" id="fb"></a>
+            <a href="https://www.x.com" id="tw"></a>
+            <a href="https://www.youtube.com" id="yt"></a>
+        </div>
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof(Storage) !== "undefined") {
+                document.getElementById('profile-name').innerText = localStorage.getItem('fname') + ' ' + localStorage.getItem('lname');
+                document.getElementById('profile-email').innerText = localStorage.getItem('email');
+                document.getElementById('profile-gender').innerText = localStorage.getItem('gender');
+                document.getElementById('profile-mobile').innerText = localStorage.getItem('mobile_num') || 'N/A';
+                document.getElementById('profile-reason').innerText = localStorage.getItem('reason');
+            } 
+        });
+    </script>
+</body>
+</html>

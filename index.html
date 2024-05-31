@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alley Cat Allies</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+
+        <nav>
+
+            <div class="hlogo">
+
+                <img src="media/grey-logo.png" alt="">        
+            </div>
+
+            <div class="htext">
+
+                <a href="#form">Sign Up</a>
+                
+            </div>
+
+        </nav>
+        
+    </header>
+
+    <section class="page1">
+
+
+        <video autoplay loop muted playsinline>
+
+            <source src="media/cat.mp4" type="video/mp4">
+
+            You can't play this video.
+
+         </video>
+
+         <h1>Caring for cats, one TNR at a time.</h1>
+         
+         <h3>Help us in improving the lives of feral cats.</h3>
+         
+
+    </section>
+
+    <section class="page2">
+
+
+        <div class="page2title">
+
+            <h1>Who We Are</h1>
+
+        </div>
+
+        <div class="page2box">
+
+            <div class="page2boxtext">
+                Alley Cat Allies is a dedicated non-profit organization committed to improving the lives of stray and feral cats through humane and effective methods. Our primary focus is on implementing and promoting Trap-Neuter-Return (TNR) programs as a compassionate approach to managing feral cat populations. Through TNR, we work to control the cat population, reduce the number of homeless kittens, and enhance the overall well-being of feral cats. Additionally, we engage in advocacy efforts, striving to create and support policies that ensure the humane treatment of cats while providing valuable resources and education to communities, animal control agencies, and individuals. Join us in our mission to create a world where all cats are treated with kindness and compassion.
+            </div>
+
+            <div class="page2img">
+                <img src="media/pexels-feyza-daştan-19593833.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="page3" >
+
+        <div class="page3title">
+            <h1>Our Achievements</h1>
+        </div>
+
+        <div class="page3container">
+            <div class="achievement-box">
+              <img src="media/neutercat.jpg" alt="Achievement 1">
+              <p>Through our dedicated efforts, we've successfully spayed and neutered over 1,000 cats, contributing to the reduction of stray populations and promoting a healthier environment for both feline companions and communities.</p>
+            </div>
+          
+            <div class="achievement-box">
+              <img src="media/pexels-mikhail-nilov-8350961.jpg" alt="Achievement 2">
+              <p>Our advocacy has reached and engaged with 50+ communities, fostering a sense of responsibility and compassion towards stray cats. By promoting Trap-Neuter-Return, we've cultivated a network of caring individuals committed to improving the lives of feral feline populations..</p>
+            </div>
+          
+            <div class="achievement-box">
+              <img src="media/pexels-rdne-stock-project-8364638.jpg" alt="Achievement 3">
+              <p>Our advocacy has conducted 100+ educational outreach sessions, equipping communities with the knowledge and tools to implement effective Trap-Neuter-Return programs. This achievement reflects our commitment to creating sustainable solutions for the welfare of stray and feral cats.</p>
+            </div>
+          </div>
+          
+
+    </section>
+
+    <section class="page5">
+        <div class="page5title">
+
+            <h1>Background</h1>
+
+        </div>
+
+        <div class="page5box">
+
+            <div class="page5boxtext">
+                Support our mission by donating to fund critical initiatives such as Trap-Neuter-Return programs, public education campaigns, and legislative advocacy. Join our dedicated volunteer team to make a tangible impact on the lives of cats through hands-on care, outreach, or administrative support. Advocate for feline welfare by staying informed about local legislation, engaging with decision-makers, and promoting responsible cat ownership. Help us raise awareness by sharing our mission on social media, attending events, and encouraging others to join the cause. Through your financial support, volunteer efforts, advocacy, and spreading the word, you play a vital role in creating a world where every cat is valued and protected.
+            </div>
+
+        </div>
+        </section>
+
+        <section class="page2" id="signup-section">
+            <div class="page2title">
+
+                <h1>Sign Up to Help!</h1>
+    
+            </div>
+            <form id="form" onsubmit="return input();">
+                <fieldset id="sign-up">
+                    <legend>Sign Up</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="fName">First Name *</label>
+                        <input type="text" id="fName" name="first_name" placeholder="Enter your first name" required>
+                        <div id="fNameError" class="error"></div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="lName">Last Name *</label>
+                        <input type="text" id="lName" name="last_name" placeholder="Enter your last name" required>
+                        <div id="lNameError" class="error"></div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="Email">Email *</label>
+                        <input type="email" id="Email" name="Email" placeholder="Enter your email" required>
+                        <div id="emailError" class="error"></div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label>Gender *</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="prefernot" name="gender" value="Prefer not to say">
+                        <label for="prefernot">Prefer not to say</label>
+                        <div id="genderError" class="error"></div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="pword">Password *</label>
+                        <input type="password" id="pword" name="pword" placeholder="Enter a password" required>
+                        <div id="pwordError" class="error"></div>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="mobile_num">Mobile Number</label>
+                        <input type="text" id="mobile_num" name="mobile_num" placeholder="Enter your mobile number">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="reason">Why I support this campaign? *</label>
+                        <textarea name="reason" id="reason" columns="30" rows="3" placeholder="I love cats!" required></textarea>
+                        <div id="reasonError" class="error"></div>
+                    </div>
+                    
+                    <input type="submit" id="submit" value="Sign Up">
+                </fieldset>
+            </form>
+            
+            
+            
+        </section>
+
+
+    <footer>
+        <div class="fleft">
+
+            <div class="flogo">
+
+                <img src="media/grey-logo.png" alt="">
+
+            </div>
+
+            <div class="ftext">
+
+                no copyright because this is not official website go to actual one cool thanks
+
+            </div>
+             <div class="website"><a href="https://www.alleycat.org/resources/why-trap-neuter-return-feral-cats-the-case-for-tnr/">Alley Cat Allies</a></div>
+        </div>
+
+        <div class="spritelinks">
+            <a href="https://www.facebook.com" id="fb"></a>
+            <a href="https://www.x.com" id="tw"></a>
+            <a href="https://www.youtube.com" id="yt"></a>
+        </div>
+
+    </footer>
+
+   
+</body>
+</html>
